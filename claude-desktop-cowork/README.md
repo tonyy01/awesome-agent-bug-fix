@@ -22,7 +22,7 @@ Any shell command (e.g., `ls -la /sessions/.../mnt/d/`) triggers this error.
 ### Step 1: Check Claude Desktop logs
 
 ```
-C:\Users\YE\AppData\Local\Claude\logs\
+%LOCALAPPDATA%\Claude\logs\
 ├── main.log
 ├── cowork_vm_node.log
 ├── ssh.log
@@ -68,8 +68,9 @@ The root cause is **MSIX packaging corrupting the Authenticode signature of `cla
 4. Signature verification fails → client disconnects → pipe EOF
 
 This is documented in:
-- [Anthropic Issue #90283](https://claudeissues.com/issue/90283)
-- [GitHub Issue #56195](https://github.com/anthropics/claude-code/issues/56195)
+- [Claude Desktop Issue #90283](https://claudeissues.com/issue/90283-bug-cowork-rpc-pipe-closed-on-windows-11-shipped-claude-exe-fails-authenticode-c) — Original bug report with root cause analysis
+- [GitHub Issue #56195](https://github.com/anthropics/claude-code/issues/56195) — Related pipe creation failure
+- [GitHub Issue #35281](https://github.com/anthropics/claude-code/issues/35281) — Earlier similar issue
 
 ## Fix
 
@@ -120,8 +121,8 @@ When running from outside the MSIX package:
 
 This fix was not discovered by me. It was first reported and solved by:
 
-- **[Issue #90283](https://claudeissues.com/issue/90283)** — Original bug report with root cause analysis
-- **[Issue #35281](https://github.com/anthropics/claude-code/issues/35281)** — Earlier similar issue with the same workaround
+- **[Issue #90283](https://claudeissues.com/issue/90283-bug-cowork-rpc-pipe-closed-on-windows-11-shipped-claude-exe-fails-authenticode-c)** — Original bug report with root cause analysis
+- **[GitHub Issue #35281](https://github.com/anthropics/claude-code/issues/35281)** — Earlier similar issue with the same workaround
 - **[ClaudeFix](https://github.com/jesperlive/claudefix)** — Community-maintained fix script
 
 I independently diagnosed and verified the same fix. This entry documents my experience to help others who encounter the same problem.
