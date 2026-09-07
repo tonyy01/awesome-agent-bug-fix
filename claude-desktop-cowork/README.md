@@ -116,6 +116,16 @@ When running from outside the MSIX package:
 | 2026-09-05 | 1.46388.4.0 | ❌ Still broken |
 | 2026-09-07 | 1.46388.4.0 | ✅ Workaround confirmed |
 
+## Credits
+
+This fix was not discovered by me. It was first reported and solved by:
+
+- **[Issue #90283](https://claudeissues.com/issue/90283)** — Original bug report with root cause analysis
+- **[Issue #35281](https://github.com/anthropics/claude-code/issues/35281)** — Earlier similar issue with the same workaround
+- **[ClaudeFix](https://github.com/jesperlive/claudefix)** — Community-maintained fix script
+
+I independently diagnosed and verified the same fix. This entry documents my experience to help others who encounter the same problem.
+
 ## Lessons Learned
 
 1. **Always check logs before restarting** — the error message told us exactly where to look
