@@ -68,7 +68,7 @@ The root cause is **MSIX packaging corrupting the Authenticode signature of `cla
 4. Signature verification fails → client disconnects → pipe EOF
 
 This is documented in:
-- [Claude Desktop Issue #90283](https://claudeissues.com/issue/90283-bug-cowork-rpc-pipe-closed-on-windows-11-shipped-claude-exe-fails-authenticode-c) — Original bug report with root cause analysis
+- [Claude Desktop Issue #90283](https://github.com/anthropics/claude-code/issues?q=RPC+pipe+closed) — Original bug report with root cause analysis
 - [GitHub Issue #56195](https://github.com/anthropics/claude-code/issues/56195) — Related pipe creation failure
 - [GitHub Issue #35281](https://github.com/anthropics/claude-code/issues/35281) — Earlier similar issue
 
@@ -113,7 +113,9 @@ When running from outside the MSIX package:
 | Date | Version | Status |
 |------|---------|--------|
 | 2026-08-23 | 1.34493.1.0 | ✅ Working |
-| 2026-08-27+ | 1.37937.x | ❌ Broken |
+| 2026-08-27 | 1.37937.1.0 | ❌ Broken |
+| 2026-08-27 | 1.37937.3.0 | ❌ Broken |
+| 2026-09-05 | 1.46388.3.0 | ❌ Broken |
 | 2026-09-05 | 1.46388.4.0 | ❌ Still broken |
 | 2026-09-07 | 1.46388.4.0 | ✅ Workaround confirmed |
 
@@ -121,7 +123,7 @@ When running from outside the MSIX package:
 
 This fix was not discovered by me. It was first reported and solved by:
 
-- **[Issue #90283](https://claudeissues.com/issue/90283-bug-cowork-rpc-pipe-closed-on-windows-11-shipped-claude-exe-fails-authenticode-c)** — Original bug report with root cause analysis
+- **[Issue #90283](https://github.com/anthropics/claude-code/issues?q=RPC+pipe+closed)** — Original bug report with root cause analysis
 - **[GitHub Issue #35281](https://github.com/anthropics/claude-code/issues/35281)** — Earlier similar issue with the same workaround
 - **[ClaudeFix](https://github.com/jesperlive/claudefix)** — Community-maintained fix script
 

@@ -1,6 +1,6 @@
 # awesome-agent-bug-fix
 
-A curated collection of real-world bug fixes for AI agents and tools. Each entry documents the problem, diagnosis process, root cause, and fix.
+A curated collection of bug fixes for AI agents and tools. Each entry documents the problem, diagnosis process, root cause, and fix.
 
 ## Why This Exists
 
