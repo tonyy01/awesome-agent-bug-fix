@@ -1,27 +1,17 @@
 # awesome-agent-bug-fix
 
-A curated collection of bug fixes for AI agents and tools. Each entry documents the problem, diagnosis process, root cause, and fix.
+AI 工具出问题了？先来这里查查，可能有人已经修过了。
 
-## Why This Exists
+## 现有修复
 
-When AI tools break, the fix is often simple — but finding it isn't. This repository collects debugging stories that save others time and teach systematic problem-solving.
+| 工具 | 问题 | 修复方法 |
+|------|------|----------|
+| [Claude Desktop](./claude-desktop-cowork/README.md) | Cowork 启动失败 "RPC pipe closed" | 手动复制服务并运行 |
 
-## How to Use
+## 贡献修复
 
-- **Found a bug in an AI tool?** Check if someone has already fixed it here.
-- **Fixed a bug yourself?** Add your story to help others.
-- **Learning to debug?** Read through the cases to build your intuition.
+想分享你的修复？直接提交 PR，附上：
+1. 问题描述
+2. 修复步骤（越简单越好）
 
-## Entries
-
-| Tool | Bug | Root Cause | Fix |
-|------|-----|------------|-----|
-| [Claude Desktop](./claude-desktop-cowork/README.md) | Cowork workspace "RPC pipe closed" | MSIX packaging corrupts Authenticode signature | Manual service start with `xcopy /G` |
-
-## Contributing
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
-
-## License
-
-MIT
+不需要长篇大论，能帮到别人就行。

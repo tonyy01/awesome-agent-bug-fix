@@ -1,60 +1,16 @@
-# Contributing
+# 贡献指南
 
-Contributions welcome! Here's how to add your bug fix story.
+分享你的 AI 工具修复经验。
 
-## What to Include
+## 最低要求
 
-Each entry should contain:
+1. **问题**：什么工具出了什么问题？
+2. **修复**：你怎么修的？（截图/代码/步骤都行）
 
-1. **Problem** — What was the error? What were you trying to do?
-2. **Environment** — OS, tool version, relevant configuration
-3. **Diagnosis Process** — How did you find the root cause? What logs did you check?
-4. **Root Cause** — What was actually wrong?
-5. **Fix** — The solution, with code/steps
-6. **Lessons Learned** — What would you do differently next time?
+## 提交方式
 
-## Template
+1. Fork 本仓库
+2. 新建文件夹 `./[工具名]-[问题简述]/README.md`
+3. 提交 PR
 
-```markdown
-# [Tool Name]: [Error Summary]
-
-## Problem
-[Description of the error]
-
-## Environment
-- **OS:** [e.g., Windows 11, macOS 14]
-- **Tool:** [e.g., Claude Desktop 1.46388.4.0]
-
-## Diagnosis Process
-[Step-by-step how you found the root cause]
-
-## Root Cause
-[What was actually wrong]
-
-## Fix
-[The solution]
-
-## Lessons Learned
-[Key takeaways]
-```
-
-## Quality Guidelines
-
-- **Be specific** — Include exact error messages, file paths, commands
-- **Be honest** — Include dead ends and failed attempts
-- **Be helpful** — Explain *why* the fix works, not just *what* to do
-- **Be concise** — Cut anything that doesn't help someone else
-
-## How to Submit
-
-1. Fork this repository
-2. Create a new directory: `./[tool-name]-[bug-slug]/`
-3. Add your `README.md` using the template
-4. Update the main `README.md` table
-5. Submit a Pull Request
-
-## Code of Conduct
-
-- No blaming or shaming tool developers
-- Focus on helping others, not showing off
-- Respect privacy — anonymize sensitive details
+不需要完美，能帮到人就行。

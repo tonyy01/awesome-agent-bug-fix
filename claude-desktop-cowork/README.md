@@ -14,7 +14,7 @@ Any shell command (e.g., `ls -la /sessions/.../mnt/d/`) triggers this error.
 ## Environment
 
 - **OS:** Windows 11 Pro
-- **Claude Desktop:** 1.46388.4.0 (MSIX from Microsoft Store)
+- **Claude Desktop:** 1.37937.x, 1.46388.3.0, 1.46388.4.0 (MSIX from Microsoft Store)
 - **Virtualization:** Hyper-V, VirtualMachinePlatform, vmcompute all enabled
 
 ## Diagnosis Process
