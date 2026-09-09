@@ -1,16 +1,16 @@
-# 贡献指南
+# Contributing
 
-分享你的 AI 工具修复经验。
+Share your AI tool fix experience.
 
-## 最低要求
+## Minimum Requirements
 
-1. **问题**：什么工具出了什么问题？
-2. **修复**：你怎么修的？（截图/代码/步骤都行）
+1. **Problem**: What tool had what issue?
+2. **Fix**: How did you fix it? (Screenshots/code/steps all work)
 
-## 提交方式
+## How to Submit
 
-1. Fork 本仓库
-2. 新建文件夹 `./[工具名]-[问题简述]/README.md`
-3. 提交 PR
+1. Fork this repo
+2. Create a folder: `./[tool-name]-[bug-slug]/README.md`
+3. Submit a PR
 
-不需要完美，能帮到人就行。
+No need to be perfect — just help someone else.
