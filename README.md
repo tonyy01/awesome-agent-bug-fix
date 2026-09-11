@@ -1,17 +1,17 @@
 # awesome-agent-bug-fix
 
-AI 工具出问题了？先来这里查查，可能有人已经修过了。
+AI tool broken? Check here first — someone might have already fixed it.
 
-## 现有修复
+## Existing Fixes
 
-| 工具 | 问题 | 修复方法 |
-|------|------|----------|
-| [Claude Desktop](./claude-desktop-cowork/README.md) | Cowork 启动失败 "RPC pipe closed" | 手动复制服务并运行 |
+| Tool | Problem | Fix |
+|------|---------|-----|
+| Claude Desktop | Cowork fails to start: "RPC pipe closed" | [Manual service start](./claude-cowork-rpc-pipe-closed/README.md) |
 
-## 贡献修复
+## Contribute a Fix
 
-想分享你的修复？直接提交 PR，附上：
-1. 问题描述
-2. 修复步骤（越简单越好）
+Want to share your fix? Submit a PR with:
+1. Problem description
+2. Fix steps (keep it simple)
 
-不需要长篇大论，能帮到别人就行。
+No need to be perfect — just help someone else.
