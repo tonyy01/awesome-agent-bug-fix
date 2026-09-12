@@ -7,6 +7,7 @@ AI tool broken? Check here first — someone might have already fixed it.
 | Tool | Problem | Fix |
 |------|---------|-----|
 | Claude Desktop | Cowork fails to start: "RPC pipe closed" | [Manual service start](./claude-cowork-rpc-pipe-closed/README.md) |
+| WorkBuddy + OpenCode Go | 400: Missing x-opencode-session | [Local proxy injection](./workbuddy-opencode-go-400/README.md) |
 
 ## Contribute a Fix
 
