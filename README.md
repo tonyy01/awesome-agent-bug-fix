@@ -1,18 +1,23 @@
 # awesome-agent-bug-fix
 
-AI tool broken? Check here first — someone might have already fixed it.
+A collection of real-world bug fixes for AI agents and tools. Each entry documents the problem, root cause, and workaround.
 
-## Existing Fixes
+## Fixes
 
-| Tool | Problem | Fix |
-|------|---------|-----|
-| Claude Desktop | Cowork fails to start: "RPC pipe closed" | [Manual service start](./claude-cowork-rpc-pipe-closed/README.md) |
-| WorkBuddy + OpenCode Go | 400: Missing x-opencode-session | [Local proxy injection](./workbuddy-opencode-go-400/README.md) |
+| Tool | Issue | Workaround |
+|------|-------|------------|
+| Claude Desktop | Cowork workspace fails to start: "RPC pipe closed" | [Manual service start](./claude-cowork-rpc-pipe-closed/README.md) |
+| WorkBuddy + OpenCode Go | 400 error: Missing x-opencode-session header | [Local proxy injection](./workbuddy-opencode-go-400/README.md) |
 
-## Contribute a Fix
+## Contributing
 
-Want to share your fix? Submit a PR with:
-1. Problem description
-2. Fix steps (keep it simple)
+To add a fix:
 
-No need to be perfect — just help someone else.
+1. Create a folder named `[tool]-[bug-slug]/`
+2. Add a `README.md` with:
+   - Problem description
+   - Environment (OS, tool version)
+   - Workaround steps
+3. Submit a Pull Request
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
